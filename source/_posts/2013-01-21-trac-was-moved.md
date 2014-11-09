@@ -6,6 +6,8 @@ title: Trac was moved to our own server
 
 After all these years, one of the most wanted things in our to-do list can be finally crossed out!
 
+<!--more-->
+
 SourceForge's Trac has served us for many years, approximately 5, but it had
 all kinds of issues; it was slow, unmaintainable, custom query was broken for
 at least 4 years now. We had reported all this to SourceForge, but they didn't

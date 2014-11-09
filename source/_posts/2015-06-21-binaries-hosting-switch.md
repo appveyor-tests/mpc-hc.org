@@ -6,6 +6,8 @@ title: Binaries moved to MaxCDN
 
 In the light of recent events, we decided to move away from SourceForge completely.
 
+<!--more-->
+
 SourceForge has served us well for many years, from the very first days back in 2006.
 But many things have changed since then, and we needed to adapt to that.
 

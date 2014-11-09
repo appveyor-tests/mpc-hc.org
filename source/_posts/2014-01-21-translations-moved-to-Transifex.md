@@ -7,6 +7,8 @@ title: Translations moved to Transifex
 From the beginning of the project, we always aimed to make MPC-HC accessible to as many people as possible through
 a growing number of translations.
 
+<!--more-->
+
 However, despite our efforts, translating MPC-HC was never easy and our somewhat
 complex translation system probably scared away a number of translators willing to work with us.
 

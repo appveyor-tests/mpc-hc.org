@@ -7,6 +7,8 @@ title: Welcome to the new website
 We would like to thank pigoz and the [mplayer2 project](http://www.mplayer2.org)
 for making their web site's template publicly available for usage.
 
+<!--more-->
+
 I slightly tweaked their template and updated dependencies to use the latest
 [FancyBox](http://fancyapps.com/fancybox/).
 

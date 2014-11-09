@@ -6,6 +6,8 @@ title: SourceForge Project of the Month
 
 Our project has been selected for the ballot for November "Community Choice" Project of the Month.
 
+<!--more-->
+
 The vote is conducted on SourceForge and runs through **Oct 15th**.
 
 The blog post linking to this vote is [here](http://sourceforge.net/blog/community-choice-project-of-the-month-vote-november),

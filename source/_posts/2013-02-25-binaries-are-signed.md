@@ -7,6 +7,8 @@ useFancybox: true
 
 Thanks to **[Certum](http://www.certum.eu/certum/cert,eindex_en.xml)** binaries will be digitally signed!
 
+<!--more-->
+
 Starting from nightly build 1.6.6.6735 (fceef5c) the binaries are digitally
 signed. You can easily verify that the file you downloaded hasn't been modified
 in any way, by verifying its signature. The stable version 1.6.5 isn't signed

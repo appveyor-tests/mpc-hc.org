@@ -6,6 +6,8 @@ title: Issues downloading MPC-HC
 
 It has come to our attention that some people are having trouble downloading MPC-HC.
 
+<!--more-->
+
 See the related Google [blog post](http://insidesearch.blogspot.de/2015/02/more-protection-from-unwanted-software.html).
 
 As a result of those changes to the malware protection in Google Chrome,

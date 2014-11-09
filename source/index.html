@@ -94,7 +94,14 @@ useFancybox: true
             </span>
         </div>
 
-        {{ post.excerpt }}
+        {% assign test_string = "<!--more-->" %}
+        {% if post.content contains test_string %}
+            {{ post.content | split: test_string | first | split: "</p>" | first }}
+            <a href="{{ post.url }}" title="Read more">[&hellip;]</a>
+            </p>    <!-- needed since we split up in "</p>" -->
+        {% else %}
+            {{ post.excerpt }}
+        {% endif %}
     </div>
     {% endfor %}
 

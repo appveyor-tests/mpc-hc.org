@@ -7,6 +7,8 @@ title: Website was moved to our own server
 As most of the people who visit our website may have noticed,
 we have moved the website to our own server and domain.
 
+<!--more-->
+
 As of *13/02/2013*, we moved the website to our server using our **mpc-hc.org** domain.
 
 I'd like to thank, again, **[CloudVPS](http://www.cloudvps.com/)**

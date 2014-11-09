@@ -6,6 +6,8 @@ title: Open call for contributors
 
 We are always in need of people willing to help us make MPC-HC better.
 
+<!--more-->
+
 We are mostly looking for:
 
 * C++ developers

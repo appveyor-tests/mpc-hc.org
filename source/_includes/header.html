@@ -14,7 +14,12 @@
         <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
         <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
-        <link rel="stylesheet" href="/assets/css/pack.css" integrity="@@packCssIntegrity" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/critical.css" inline="true">
+        <link rel="preload" href="/assets/css/pack.css" as="style" onload="this.rel='stylesheet'" integrity="@@packCssIntegrity" crossorigin="anonymous">
+
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/pack.css" integrity="@@packCssIntegrity" crossorigin="anonymous">
+        </noscript>
 
         <link rel="icon" href="/favicon.ico">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -62,6 +67,7 @@
 
         {% feed_meta %}
 
+        <script src="/assets/js/vendor/loadCSS.js" inline="true"></script>
     </head>
 
     {% capture body_class %}{{ page.layout }}{% if page.body_class %} page-{{ page.body_class }}{% elsif page.slug %} page-{{ page.slug | slugify }}{% endif %}{% endcapture %}

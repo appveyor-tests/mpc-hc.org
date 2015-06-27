@@ -1,19 +1,27 @@
-class Trac < Liquid::Tag
-  Syntax = /(\d+)/
+# A simple converter to change all `Ticket #XXX` and `Ticket #XXX, #XXX` links to `a` tags
 
-  def initialize(tagName, markup, tokens)
-    super
+module Jekyll
 
-    if markup =~ Syntax then
-      @ticket = $1
-    else
-      raise "No Trac ticket number provided in the \"trac\" tag"
+    class TracLinks < Converter
+        safe true
+        priority :low
+
+        def matches(ext)
+            ext =~ /(^\.html|^\.md)$/i
+        end
+
+        def output_ext(ext)
+            ".html"
+        end
+
+        def convert(content)
+            content
+              .gsub(/(Ticket \#\d+)(, )(\#)(\d+)/,
+                    '\1\2<a href="https://trac.mpc-hc.org/intertrac/%23\4">\3\4</a>')
+              .gsub(/(Ticket \#)(\d+)/,
+                    'Ticket <a href="https://trac.mpc-hc.org/intertrac/%23\2">#\2</a>')
+        end
+
     end
-  end
 
-  def render(context)
-    "<a href=\"https://trac.mpc-hc.org/intertrac/%23#{@ticket}\">##{@ticket}</a>"
-  end
-
-  Liquid::Template.register_tag("trac", self)
 end

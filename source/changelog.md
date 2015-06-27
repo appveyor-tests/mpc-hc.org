@@ -20,7 +20,7 @@ description: Changelog of the latest MPC-HC stable build
 ## {{ site.version.short }} - {{ site.version.date }}
 * New:
   * Add Indonesian, Lithuanian and Punjabi translations
-  * Ticket {% trac 5411 %}, Add an option to disable the preview in the web interface. This option is
+  * Ticket #5411, Add an option to disable the preview in the web interface. This option is
     disabled by default since it must be used only on a properly secured private network
 * Changed:
   * Completely new Internal Audio Renderer:
@@ -31,18 +31,18 @@ description: Changelog of the latest MPC-HC stable build
       * Provides stereo crossfeed processing option (for headphones)
       * Tries to preserve signal pitch when playing at custom rate (time stretching)
       * Supports bitstreaming
-      * Fixes tickets {% trac 203 %}, {% trac 1961 %}, {% trac 2731 %}, {% trac 3653 %}, {% trac 4047 %}, {% trac 5267 %}
-  * Ticket {% trac 3356 %}, Initial support for per-monitor DPI scaling
+      * Fixes tickets #203, #1961, #2731, #3653, #4047, #5267
+  * Ticket #3356, Initial support for per-monitor DPI scaling
   * Use internal audio decoder by default for Opus decoding
-  * Ticket {% trac 5450 %}/{% trac 5479 %}, Improved crash reporting dialog for better stability and user experience
-  * Ticket {% trac 5472 %}, Make it easier to input value to the "Audio time shift" field in options
+  * Ticket #5450/#5479, Improved crash reporting dialog for better stability and user experience
+  * Ticket #5472, Make it easier to input value to the "Audio time shift" field in options
   * OGM stream switching hotkeys were unified with generic ones
 * Updated:
     * MediaInfoLib to v0.7.75
     * Little CMS to v2.7 (git 07da965)
     * LAV Filters to stable version 0.66.0:
         - LAV Splitter: New ASF/WMV demuxer
-        - Ticket {% trac 5548 %}, LAV Splitter: Fix some rare deadlocks at startup
+        - Ticket #5548, LAV Splitter: Fix some rare deadlocks at startup
         - LAV Video Decoder: Allow hardware decoding of UHD video with AMD cards
     * Arabic, Armenian, Basque, Bengali, British English, Catalan, Chinese (Simplified and Traditional),
       Croatian, Czech, Danish, Dutch, French, Galician, German, Greek, Hungarian, Japanese, Korean, Malay,
@@ -53,20 +53,20 @@ description: Changelog of the latest MPC-HC stable build
   * QuickTime: Fix a crash when using system default renderer
   * Fix "snap to desktop edge" and "autofit zoom" on Windows 10
   * Fix reliability and stability of the D3D Fullscreen mode
-  * Ticket {% trac 4086 %}, Logitech LCD: Correctly initialize the volume at start-up
-  * Ticket {% trac 5248 %}, Adjust mouse behavior for Windows 10
-  * Ticket {% trac 5454 %}, Deleting an item from the playlist sometimes did not work when shuffle mode was enabled
-  * Ticket {% trac 5464 %}, If the main window was minimized while the D3D Fullscreen window was displayed on another screen,
+  * Ticket #4086, Logitech LCD: Correctly initialize the volume at start-up
+  * Ticket #5248, Adjust mouse behavior for Windows 10
+  * Ticket #5454, Deleting an item from the playlist sometimes did not work when shuffle mode was enabled
+  * Ticket #5464, If the main window was minimized while the D3D Fullscreen window was displayed on another screen,
     it was impossible to use the mouse buttons to play, pause, exit fullscreen, etc.
-  * Ticket {% trac 5488 %}, Suggested filename was wrong when saving subtitles in specific cases
-  * Ticket {% trac 5496 %}, Subtitle downloader dialog: the preferred languages were sometimes not displayed first
-  * Ticket {% trac 5515 %}, Blu-ray (PGS) subtitles were sometimes not displayed
-  * Ticket {% trac 5519 %}, SRT subtitles: Support parsing files with negative timecodes
-  * Ticket {% trac 5573 %}, `/monitor` command line was ignored when remember window position was enabled
-  * Ticket {% trac 5573 %}, The window could return to the wrong monitor when started fullscreen using the command line
+  * Ticket #5488, Suggested filename was wrong when saving subtitles in specific cases
+  * Ticket #5496, Subtitle downloader dialog: the preferred languages were sometimes not displayed first
+  * Ticket #5515, Blu-ray (PGS) subtitles were sometimes not displayed
+  * Ticket #5519, SRT subtitles: Support parsing files with negative timecodes
+  * Ticket #5573, `/monitor` command line was ignored when remember window position was enabled
+  * Ticket #5573, The window could return to the wrong monitor when started fullscreen using the command line
     `/monitor N /fullscreen` if "remember window size" was enabled and "remember window position" was disabled
-  * Ticket {% trac 5643 %}, Stream selection did not work when using external audio file in specific cases
-  * Ticket {% trac 5647 %}, Drag&Drop was not starting playback if source folder was read only
+  * Ticket #5643, Stream selection did not work when using external audio file in specific cases
+  * Ticket #5647, Drag&Drop was not starting playback if source folder was read only
 
 
 ## All changelogs

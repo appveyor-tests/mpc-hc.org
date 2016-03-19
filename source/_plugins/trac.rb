@@ -1,4 +1,4 @@
-# A simple converter to change all `Ticket #XXX` and `Ticket #XXX, #XXX` links to `a` tags
+# A simple converter to change all `#XXX` into `a` tags to our Trac
 
 module Jekyll
 
@@ -16,10 +16,7 @@ module Jekyll
 
         def convert(content)
             content
-              .gsub(/(Ticket \#\d+)(, )(\#)(\d+)/,
-                    '\1\2<a href="https://trac.mpc-hc.org/intertrac/%23\4">\3\4</a>')
-              .gsub(/(Ticket \#)(\d+)/,
-                    'Ticket <a href="https://trac.mpc-hc.org/intertrac/%23\2">#\2</a>')
+              .gsub(/(\#)(\d+)/, "<a href=\"https://trac.mpc-hc.org/intertrac/%23\\2\">\\1\\2</a>")
         end
 
     end

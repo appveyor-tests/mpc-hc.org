@@ -30,8 +30,8 @@ description: Download our binaries, source code, etc.
 
 
 <div class="btn-group" role="group" aria-label="Toggle Buttons">
-    <button type="button" class="btn btn-default expandAll">Expand All</button>
-    <button type="button" class="btn btn-default closeAll">Close All</button>
+    <button id="expandAll" type="button" class="btn btn-default" data-toggle="collapse">Expand All</button>
+    <button id="closeAll" type="button" class="btn btn-default" data-toggle="collapse">Close All</button>
 </div>
 
 

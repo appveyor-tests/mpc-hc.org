@@ -10,13 +10,31 @@ gems:
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 exclude:
-# we generate those files ourselves
-- "*.css"
-- "*.js"
-- "_old"
+  # we generate those files ourselves
+  - "*.css"
+  - "*.js"
+  - "_old"
+
+# https://jekyllrb.com/docs/configuration/#front-matter-defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "news"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      seo:
+        type: WebPage
 
 # paginate
 paginate:           10
@@ -47,3 +65,16 @@ feed:
   url:              https://mpc-hc.org
 
 news_limit:         5
+
+# jekyll-seo-tag
+logo:               https://cdn.mpc-hc.org/assets/img/logo-256x256.png
+
+facebook:
+  app_id:           1552669435051497
+
+twitter:
+  username:         mpc_hc
+
+social:
+  name:             MPC-HC
+  links:            ["https://www.facebook.com/MediaPlayerClassicHomeCinema", "https://twitter.com/mpc_hc/", "https://plus.google.com/+Mpc-hcOrg/"]

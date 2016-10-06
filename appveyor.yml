@@ -13,8 +13,8 @@ environment:
 install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   # Bundler downgrade should be removed when the issue is fixed upstream
-  - gem uninstall bundler -x
-  - gem install bundler -v "=1.10.6" --no-document
+  #- gem uninstall bundler -x
+  #- gem install bundler -v "=1.10.6" --no-document
   - bundle install --retry 3 --jobs=%NUMBER_OF_PROCESSORS% --clean --deployment
 
 build: off
